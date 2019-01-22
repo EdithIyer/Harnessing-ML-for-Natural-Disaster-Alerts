@@ -100,7 +100,11 @@ In this project we were able to create a machine learning model that was trained
 
 The application’s workflow, as it stands, would look as follows:
 <br><br>
-Tweet Gathered using Twitter’s API  Tweet Passed through Pre-processing  Tweet Passed through Classification Model  Return Classification as “alert-worthy” or “non-alert-worthy”  If “alert-worthy”: Send Alert  If “non-alert-worthy”: Do Nothing.
+1. Tweet Gathered using Twitter’s API  
+2. Tweet Passed through Pre-processing  
+3. Classification model used to predict on tweet
+4. Return Classification as “alert-worthy” or “non-alert-worthy”  
+5. If “alert-worthy”: Send Alert  If “non-alert-worthy”: Do Nothing.
 <br><br>
 
 #### Shortcomings
