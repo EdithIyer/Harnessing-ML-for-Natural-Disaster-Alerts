@@ -86,6 +86,7 @@ The testing f1_score was 0.84
 This model showed the least amount of overfitting and has a recall score of $0.97$.
 <br><br>
 
+__[Scraping](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Hashtag%20Page%20Scrape.ipynb)__
 __[Model Workflow](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
  __[Model Preprocessing and Workflow Notebook](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
 
