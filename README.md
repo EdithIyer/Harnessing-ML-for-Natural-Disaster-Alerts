@@ -15,6 +15,7 @@ We wanted to build a supervised learning model to correctly predict if a tweet i
 <br>
 <br>
 __Important Notebooks for Data Gathering and Cleaning__
+<br><br>
 __[Kaggle DataSet Cleaning](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Kaggle%20Dataset%20Import%20and%20Cleaning.ipynb)__
 This dataset contained tweets regarding multiple types of Natural Disasters, but only contained 50 tweets regarding tsunamis.
 <br>
@@ -36,7 +37,7 @@ Before we began to build our model, we had to preprocess our tweet data so that 
 4. Add target column to vectorized dataframe
 ***
 ### Imbalanced classes
-When we selected tweets for model building, we ran into the fact that the number of tweets that are considered 'alert worthy' is significantly lower that the number of tweets that are considered 'not alert worthy'. Therefore, only about 20% of our tweets were actually classified as 'alert worthy'. This issue is called __imbalanced classes__. There are several methods to handle imbalanced classes and most come with important cons to take into account. For example, we could just oversample from the minority class, meaning we resample with replacement from the existing data points. This method, however is highly susceptible to overfitting as it increases the concentration of the same datapoints. We chose to utilize a method called SMOTE or Synthetic Minority Oversampling Technique. SMOTE is able to add data points by interpolating new points based on some number of nearest neighbors. We utilized a manual gridsearch to determine the best parameters for our SMOTE transformation before deciding and then used the best parameters to fit and transform the data to SMOTE.
+When we selected tweets for model building, we ran into the fact that the number of tweets that are considered 'alert worthy' is significantly lower that the number of tweets that are considered 'not alert worthy'. Therefore, only about 20% of our tweets were actually classified as 'alert worthy'. This is an issue of __imbalanced classes__. There are several methods to handle imbalanced classes and most come with important cons to take into account. For example, we could just oversample from the minority class, meaning we resample with replacement from the existing data points. This method, however is highly susceptible to overfitting as it increases the concentration of the same datapoints. We chose to utilize a method called SMOTE or Synthetic Minority Oversampling Technique. SMOTE is able to add data points by interpolating new points based on some number of nearest neighbors. We utilized a manual gridsearch to determine the best parameters for our SMOTE transformation before deciding and then used the best parameters to fit and transform the data to SMOTE.
 
 ***
 ### Principal Component Analysis (PCA)
@@ -72,7 +73,7 @@ We also compared PCA transformed data to non PCA transformed data.
 
 <br>
 <br>
-#### Final Model:
+#### Final Model
 We chose a model that went through the following workflow:
 1. Custom Lemmatization
 2. CountVectorization
@@ -85,16 +86,20 @@ The testing f1_score was $0.84$.
 This model showed the least amount of overfitting and has a recall score of $0.97$.
 <br><br>
 The notebook used for preprocessing and model selection can be found __[here](https://git.generalassemb.ly/edithih/Harnessing-Machine-Learning-for-Natural-Disaster-Alert-Systems/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
+
 ***
+
 ### Conclusions
 In this project we were able to create a machine learning model that was trained on labeled tweets about whether or not a tweet would be classified as 'alert worthy'. Additionally, we created a function that preprocesses incoming tweets, uses the model to make predictions and output an alert if there are a certain number of 'alert worthy' tweets in the most recent input. This machine learning model could be integrated into a web app that takes in a continuous stream of tweets.
-<br>
-#### How would the application work?
+<br><br>
+
+#### Proposed Application Functionality
 
 The application’s workflow, as it stands, would look as follows:
 <br><br>
 Tweet Gathered using Twitter’s API  Tweet Passed through Pre-processing  Tweet Passed through Classification Model  Return Classification as “alert-worthy” or “non-alert-worthy”  If “alert-worthy”: Send Alert  If “non-alert-worthy”: Do Nothing.
 <br><br>
+
 #### Shortcomings
 
 With more time, we could:
