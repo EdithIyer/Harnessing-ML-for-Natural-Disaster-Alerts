@@ -67,12 +67,11 @@ We compared the following models:
 - Random Forest Classifier
 - AdaBoost Classifier
 <br>
-<br>
-
 We also compared PCA transformed data to non PCA transformed data.
 
-<br>
-<br>
+<br><br>
+
+
 #### Final Model
 We chose a model that went through the following workflow:
 1. Custom Lemmatization
@@ -85,7 +84,7 @@ The testing f1_score was $0.84$.
 <br>
 This model showed the least amount of overfitting and has a recall score of $0.97$.
 <br><br>
-The notebook used for preprocessing and model selection can be found __[here](https://git.generalassemb.ly/edithih/Harnessing-Machine-Learning-for-Natural-Disaster-Alert-Systems/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
+The notebook used for preprocessing and model selection can be found __[here](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
 
 ***
 
