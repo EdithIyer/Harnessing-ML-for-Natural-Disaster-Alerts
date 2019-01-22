@@ -78,13 +78,14 @@ We chose a model that went through the following workflow:
 2. CountVectorization
 3. Corrected for imbalanced classes using SMOTE and a k value = 4
 4. AdaBoost Classifier with standard hyperparameters
-The training f1_score was $0.93$
 <br>
-The testing f1_score was $0.84$.
+The training f1_score was 0.93
+<br>
+The testing f1_score was 0.84
 <br>
 This model showed the least amount of overfitting and has a recall score of $0.97$.
 <br><br>
-The notebook used for preprocessing and model selection can be found __[here](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
+ __[Model Preprocessing and Workflow Notebook](https://github.com/EdithIyer/Harnessing-ML-for-Natural-Disaster-Alerts/blob/master/Notebooks/Final%20Model%20Selection%20Workflow%20and%20Predictions.ipynb)__
 
 ***
 
